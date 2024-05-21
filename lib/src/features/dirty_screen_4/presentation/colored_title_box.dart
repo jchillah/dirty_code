@@ -15,7 +15,7 @@ class ColoredTitleBox extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
-        color: color,
+        color: Colors.blueAccent,
       ),
       margin: const EdgeInsets.all(4),
       padding: const EdgeInsets.all(16.0),

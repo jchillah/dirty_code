@@ -16,22 +16,25 @@ class DirtyScreenFour extends StatelessWidget {
             ColoredTitleBox(
               color: Colors.blueAccent,
               title: "Home",
-              icon: Icon(Icons.home),
+              icon: Icon(
+                Icons.home,
+                color: Colors.white,
+              ),
             ),
             ColoredTitleBox(
               color: Colors.greenAccent,
               title: "Work",
-              icon: Icon(Icons.work),
+              icon: Icon(Icons.work, color: Colors.white),
             ),
             ColoredTitleBox(
               color: Colors.deepOrangeAccent,
               title: "School",
-              icon: Icon(Icons.school),
+              icon: Icon(Icons.school, color: Colors.white),
             ),
             ColoredTitleBox(
               color: Colors.purpleAccent,
               title: "Bike",
-              icon: Icon(Icons.directions_bike),
+              icon: Icon(Icons.directions_bike, color: Colors.white),
             ),
           ],
         ),
