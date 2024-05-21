@@ -1,3 +1,4 @@
+import 'package:dirty_code/src/features/dirty_screen_8/presentation/product_card.dart';
 import 'package:flutter/material.dart';
 
 class DirtyScreenEight extends StatelessWidget {
@@ -12,45 +13,9 @@ class DirtyScreenEight extends StatelessWidget {
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            Card(
-              margin: EdgeInsets.all(8),
-              child: Padding(
-                padding: EdgeInsets.all(16.0),
-                child: Column(
-                  children: [
-                    Text('Pizza', style: TextStyle(fontSize: 22)),
-                    SizedBox(height: 8),
-                    Text('1 / 5', style: TextStyle(fontSize: 16)),
-                  ],
-                ),
-              ),
-            ),
-            Card(
-              margin: EdgeInsets.all(8),
-              child: Padding(
-                padding: EdgeInsets.all(16.0),
-                child: Column(
-                  children: [
-                    Text('Pasta', style: TextStyle(fontSize: 22)),
-                    SizedBox(height: 8),
-                    Text('4 / 5', style: TextStyle(fontSize: 16)),
-                  ],
-                ),
-              ),
-            ),
-            Card(
-              margin: EdgeInsets.all(8),
-              child: Padding(
-                padding: EdgeInsets.all(16.0),
-                child: Column(
-                  children: [
-                    Text('Lasgane', style: TextStyle(fontSize: 22)),
-                    SizedBox(height: 8),
-                    Text('5 / 5', style: TextStyle(fontSize: 16)),
-                  ],
-                ),
-              ),
-            ),
+            ProductCard(procuctName: "Pizza", starRating: "1 / 5"),
+            ProductCard(procuctName: "Pasta", starRating: "4 / 5"),
+            ProductCard(procuctName: "Lasagne", starRating: "5 / 5")
           ],
         ),
       ),

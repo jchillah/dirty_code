@@ -1,3 +1,4 @@
+import 'package:dirty_code/src/features/dirty_screen_9/presentation/math_add_tasks.dart';
 import 'package:flutter/material.dart';
 
 class DirtyScreenNine extends StatelessWidget {
@@ -12,54 +13,10 @@ class DirtyScreenNine extends StatelessWidget {
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            Padding(
-              padding: EdgeInsets.all(16.0),
-              child: Row(
-                children: [
-                  Text('4', style: TextStyle(fontSize: 24)),
-                  Text(' + ', style: TextStyle(fontSize: 24)),
-                  Text('5', style: TextStyle(fontSize: 24)),
-                  Text(' = ', style: TextStyle(fontSize: 24)),
-                  Text('9', style: TextStyle(fontSize: 24)),
-                ],
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.all(16.0),
-              child: Row(
-                children: [
-                  Text('3', style: TextStyle(fontSize: 24)),
-                  Text(' + ', style: TextStyle(fontSize: 24)),
-                  Text('3', style: TextStyle(fontSize: 24)),
-                  Text(' = ', style: TextStyle(fontSize: 24)),
-                  Text('6', style: TextStyle(fontSize: 24)),
-                ],
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.all(16.0),
-              child: Row(
-                children: [
-                  Text('2', style: TextStyle(fontSize: 24)),
-                  Text(' + ', style: TextStyle(fontSize: 24)),
-                  Text('8', style: TextStyle(fontSize: 24)),
-                  Text(' = ', style: TextStyle(fontSize: 24)),
-                  Text('10', style: TextStyle(fontSize: 24)),
-                ],
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.all(16.0),
-              child: Row(
-                children: [
-                  Text('7', style: TextStyle(fontSize: 24)),
-                  Text(' + ', style: TextStyle(fontSize: 24)),
-                  Text('1', style: TextStyle(fontSize: 24)),
-                  Text(' = ', style: TextStyle(fontSize: 24)),
-                  Text('8', style: TextStyle(fontSize: 24)),
-                ],
-              ),
-            ),
+            MathAddTasks(amount1: "4", amount2: "5", totalAmount: "9"),
+            MathAddTasks(amount1: "3", amount2: "3", totalAmount: "6"),
+            MathAddTasks(amount1: "2", amount2: "8", totalAmount: "10"),
+            MathAddTasks(amount1: "7", amount2: "1", totalAmount: "8"),
           ],
         ),
       ),

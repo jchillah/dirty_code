@@ -1,3 +1,4 @@
+import 'package:dirty_code/src/features/dirty_screen_7/presentation/costum_card.dart';
 import 'package:flutter/material.dart';
 
 class DirtyScreenSeven extends StatelessWidget {
@@ -12,62 +13,22 @@ class DirtyScreenSeven extends StatelessWidget {
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            Card(
-              margin: EdgeInsets.all(8),
-              child: Padding(
-                padding: EdgeInsets.all(16.0),
-                child: Column(
-                  children: [
-                    Icon(Icons.star, size: 50),
-                    SizedBox(height: 8),
-                    Text('Stern', style: TextStyle(fontSize: 22)),
-                    Text('Das ist ein Stern', style: TextStyle(fontSize: 16)),
-                  ],
-                ),
-              ),
-            ),
-            Card(
-              margin: EdgeInsets.all(8),
-              child: Padding(
-                padding: EdgeInsets.all(16.0),
-                child: Column(
-                  children: [
-                    Icon(Icons.favorite, size: 50),
-                    SizedBox(height: 8),
-                    Text('Herz', style: TextStyle(fontSize: 22)),
-                    Text('Das ist ein Herz', style: TextStyle(fontSize: 16)),
-                  ],
-                ),
-              ),
-            ),
-            Card(
-              margin: EdgeInsets.all(8),
-              child: Padding(
-                padding: EdgeInsets.all(16.0),
-                child: Column(
-                  children: [
-                    Icon(Icons.home, size: 50),
-                    SizedBox(height: 8),
-                    Text('Haus', style: TextStyle(fontSize: 22)),
-                    Text('Das ist ein Haus', style: TextStyle(fontSize: 16)),
-                  ],
-                ),
-              ),
-            ),
-            Card(
-              margin: EdgeInsets.all(8),
-              child: Padding(
-                padding: EdgeInsets.all(16.0),
-                child: Column(
-                  children: [
-                    Icon(Icons.work, size: 50),
-                    SizedBox(height: 8),
-                    Text('Koffer', style: TextStyle(fontSize: 22)),
-                    Text('Das ist ein Koffer', style: TextStyle(fontSize: 16)),
-                  ],
-                ),
-              ),
-            ),
+            CostumCard(
+                title: "Stern",
+                icon: Icon(Icons.star),
+                description: "Das ist ein Stern"),
+            CostumCard(
+                title: "Herz",
+                icon: Icon(Icons.favorite),
+                description: "Das ist ein Herz"),
+            CostumCard(
+                title: "Haus",
+                icon: Icon(Icons.home),
+                description: "Das ist ein Haus"),
+            CostumCard(
+                title: "Koffer",
+                icon: Icon(Icons.work),
+                description: "Das ist ein Koffer")
           ],
         ),
       ),
