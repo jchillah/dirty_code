@@ -1,3 +1,4 @@
+import 'package:dirty_code/src/features/dirty_screen_11/presentation/costum_list_tile.dart';
 import 'package:flutter/material.dart';
 
 class DirtyScreenEleven extends StatelessWidget {
@@ -8,38 +9,14 @@ class DirtyScreenEleven extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Dirty Screen #11"),
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            ListTile(
-              leading: const Icon(Icons.event),
-              title: const Text('Abrissparty'),
-              subtitle: const Text('Party'),
-              trailing: const Icon(Icons.arrow_forward),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: const Icon(Icons.event),
-              title: const Text('Apres Ski'),
-              subtitle: const Text('Party'),
-              trailing: const Icon(Icons.arrow_forward),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: const Icon(Icons.event),
-              title: const Text('Oktoberfest'),
-              subtitle: const Text('Party'),
-              trailing: const Icon(Icons.arrow_forward),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: const Icon(Icons.event),
-              title: const Text('Club night'),
-              subtitle: const Text('Party'),
-              trailing: const Icon(Icons.arrow_forward),
-              onTap: () {},
-            ),
+            CostumListTile(title: "Abrissparty"),
+            CostumListTile(title: "Apres Ski"),
+            CostumListTile(title: "Oktoberfest"),
+            CostumListTile(title: "Club Night"),
           ],
         ),
       ),
