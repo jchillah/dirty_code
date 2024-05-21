@@ -8,19 +8,19 @@ class SimpleTasks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: EdgeInsets.all(8),
+      margin: const EdgeInsets.all(8),
       child: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
             Text(
               task,
-              style: TextStyle(fontSize: 24),
+              style: const TextStyle(fontSize: 24),
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             Text(
               description,
-              style: TextStyle(fontSize: 16),
+              style: const TextStyle(fontSize: 16),
             ),
           ],
         ),

@@ -9,7 +9,7 @@ class DirtyScreenSeventeen extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Dirty Screen #17"),
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
           children: [

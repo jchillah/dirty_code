@@ -13,19 +13,19 @@ class BookCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: EdgeInsets.all(8),
+      margin: const EdgeInsets.all(8),
       child: Column(
         children: [
           ListTile(
-            leading: Icon(Icons.book),
+            leading: const Icon(Icons.book),
             title: Text(title),
             subtitle: Text(subTitle),
           ),
           Padding(
-            padding: EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(16.0),
             child: Text(
               description,
-              style: TextStyle(fontSize: 16),
+              style: const TextStyle(fontSize: 16),
             ),
           ),
         ],

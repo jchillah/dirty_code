@@ -14,7 +14,7 @@ class AvatarListTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: Badge(
-        label: Text(
+        label: const Text(
           '1',
           style: TextStyle(color: Colors.white),
         ),
@@ -24,7 +24,7 @@ class AvatarListTile extends StatelessWidget {
       ),
       title: Text(name),
       subtitle: Text(position),
-      trailing: Icon(Icons.more_vert),
+      trailing: const Icon(Icons.more_vert),
     );
   }
 }
