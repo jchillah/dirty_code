@@ -13,13 +13,13 @@ class Number extends StatelessWidget {
       padding: const EdgeInsets.all(16.0),
       child: Row(
         children: [
-          Icon(Icons.bug_report),
-          SizedBox(
+          const Icon(Icons.bug_report),
+          const SizedBox(
             width: 8,
           ),
           Text(
             'Box #$number',
-            style: TextStyle(fontSize: 20, color: Colors.white),
+            style: const TextStyle(fontSize: 20, color: Colors.white),
           )
         ],
       ),

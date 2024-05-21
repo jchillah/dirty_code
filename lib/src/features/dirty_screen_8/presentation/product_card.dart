@@ -9,14 +9,14 @@ class ProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: EdgeInsets.all(8),
+      margin: const EdgeInsets.all(8),
       child: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            Text('$procuctName', style: TextStyle(fontSize: 22)),
-            SizedBox(height: 8),
-            Text('$starRating', style: TextStyle(fontSize: 16)),
+            Text(procuctName, style: const TextStyle(fontSize: 22)),
+            const SizedBox(height: 8),
+            Text(starRating, style: const TextStyle(fontSize: 16)),
           ],
         ),
       ),

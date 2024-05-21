@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class Avatar extends StatelessWidget {
-  final NetworkImage profilImage;
   final String name;
-  const Avatar({super.key, required this.profilImage, required this.name});
+  final NetworkImage image;
+  const Avatar({super.key, required this.name, required this.image});
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class Avatar extends StatelessWidget {
       child: Row(
         children: [
           CircleAvatar(
-            backgroundImage: profilImage,
+            backgroundImage: image,
           ),
           const SizedBox(width: 8),
           Text(

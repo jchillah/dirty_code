@@ -13,14 +13,14 @@ class MathAddTasks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(16.0),
+      padding: const EdgeInsets.all(16.0),
       child: Row(
         children: [
-          Text('$amount1', style: TextStyle(fontSize: 24)),
-          Text(' + ', style: TextStyle(fontSize: 24)),
-          Text('$amount2', style: TextStyle(fontSize: 24)),
-          Text(' = ', style: TextStyle(fontSize: 24)),
-          Text('$totalAmount', style: TextStyle(fontSize: 24)),
+          Text(amount1, style: const TextStyle(fontSize: 24)),
+          const Text(' + ', style: TextStyle(fontSize: 24)),
+          Text(amount2, style: const TextStyle(fontSize: 24)),
+          const Text(' = ', style: TextStyle(fontSize: 24)),
+          Text(totalAmount, style: const TextStyle(fontSize: 24)),
         ],
       ),
     );

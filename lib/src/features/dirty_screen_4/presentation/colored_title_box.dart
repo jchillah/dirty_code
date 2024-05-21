@@ -22,10 +22,10 @@ class ColoredTitleBox extends StatelessWidget {
       child: Row(
         children: [
           icon,
-          SizedBox(width: 8),
+          const SizedBox(width: 8),
           Text(
-            '$title',
-            style: TextStyle(fontSize: 20, color: Colors.white),
+            title,
+            style: const TextStyle(fontSize: 20, color: Colors.white),
           ),
         ],
       ),

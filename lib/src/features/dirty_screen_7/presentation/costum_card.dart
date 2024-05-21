@@ -13,15 +13,15 @@ class CostumCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: EdgeInsets.all(8),
+      margin: const EdgeInsets.all(8),
       child: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
             icon,
-            SizedBox(height: 8),
-            Text('$title', style: TextStyle(fontSize: 22)),
-            Text('$description', style: TextStyle(fontSize: 16)),
+            const SizedBox(height: 8),
+            Text(title, style: const TextStyle(fontSize: 22)),
+            Text(description, style: const TextStyle(fontSize: 16)),
           ],
         ),
       ),

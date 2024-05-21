@@ -13,13 +13,13 @@ class AlertNumber extends StatelessWidget {
       padding: const EdgeInsets.all(16.0),
       child: Row(
         children: [
-          Icon(Icons.warning),
-          SizedBox(
+          const Icon(Icons.warning),
+          const SizedBox(
             width: 8,
           ),
           Text(
             'Alert $number',
-            style: TextStyle(fontSize: 20, color: Colors.white),
+            style: const TextStyle(fontSize: 20, color: Colors.white),
           )
         ],
       ),

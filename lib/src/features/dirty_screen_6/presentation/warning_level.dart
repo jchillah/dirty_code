@@ -17,11 +17,11 @@ class WarningLevel extends StatelessWidget {
       padding: const EdgeInsets.all(16.0),
       child: Row(
         children: [
-          Icon(Icons.favorite, color: Colors.white),
-          SizedBox(width: 8),
+          const Icon(Icons.favorite, color: Colors.white),
+          const SizedBox(width: 8),
           Text(
             'Favorite $warnLevel',
-            style: TextStyle(fontSize: 20, color: Colors.white),
+            style: const TextStyle(fontSize: 20, color: Colors.white),
           ),
         ],
       ),

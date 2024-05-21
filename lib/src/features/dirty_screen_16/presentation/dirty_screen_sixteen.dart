@@ -1,3 +1,4 @@
+import 'package:dirty_code/src/features/dirty_screen_16/presentation/avatar_16.dart';
 import 'package:flutter/material.dart';
 
 class DirtyScreenSixteen extends StatelessWidget {
@@ -12,41 +13,25 @@ class DirtyScreenSixteen extends StatelessWidget {
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            ListTile(
-              leading: const CircleAvatar(
-                backgroundImage: NetworkImage('https://picsum.photos/100'),
-              ),
-              title: const Text('Alice Johnson'),
-              subtitle: const Text('Project Manager'),
-              trailing: const Icon(Icons.arrow_forward),
-              onTap: () {},
+            Avatar16(
+              networkImage: NetworkImage('https://picsum.photos/100'),
+              title: "Alice Johnson",
+              subTitle: "Project Manager",
             ),
-            ListTile(
-              leading: const CircleAvatar(
-                backgroundImage: NetworkImage('https://picsum.photos/101'),
-              ),
-              title: const Text('Bob Smith'),
-              subtitle: const Text('Developer'),
-              trailing: const Icon(Icons.arrow_forward),
-              onTap: () {},
+            Avatar16(
+              networkImage: NetworkImage('https://picsum.photos/101'),
+              title: "Bob Smith",
+              subTitle: "Developer",
             ),
-            ListTile(
-              leading: const CircleAvatar(
-                backgroundImage: NetworkImage('https://picsum.photos/102'),
-              ),
-              title: const Text('Catherine Lee'),
-              subtitle: const Text('Designer'),
-              trailing: const Icon(Icons.arrow_forward),
-              onTap: () {},
+            Avatar16(
+              networkImage: NetworkImage('https://picsum.photos/102'),
+              title: "Catherine Lee",
+              subTitle: "Designer",
             ),
-            ListTile(
-              leading: const CircleAvatar(
-                backgroundImage: NetworkImage('https://picsum.photos/103'),
-              ),
-              title: const Text('David Wilson'),
-              subtitle: const Text('Product Owner'),
-              trailing: const Icon(Icons.arrow_forward),
-              onTap: () {},
+            Avatar16(
+              networkImage: NetworkImage('https://picsum.photos/103'),
+              title: "David Wilson",
+              subTitle: "Product Owner",
             ),
           ],
         ),
