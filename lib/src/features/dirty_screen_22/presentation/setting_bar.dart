@@ -21,7 +21,7 @@ class SettingBar extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       child: Column(
         children: [
-          Text(title, style: TextStyle(fontSize: 20)),
+          Text(title, style: const TextStyle(fontSize: 20)),
           sliderPosition,
         ],
       ),
