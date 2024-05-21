@@ -13,7 +13,7 @@ class DirtyScreenTwentyFour extends StatelessWidget {
         title: const Text("Dirty Screen #24"),
       ),
       body: ListView(
-        children: [
+        children: const [
           CheckListTile(task: "Buy groceries", isChecked: false),
           CheckListTile(task: "Walk the dog", isChecked: true),
           CheckListTile(task: "Complete homework", isChecked: false),
