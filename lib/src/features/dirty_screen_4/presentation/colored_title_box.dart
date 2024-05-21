@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class ColoredTitleBox extends StatelessWidget {
   final Color color;
   final String title;
-  final Icon icon;
+  final IconData icon;
   const ColoredTitleBox(
       {super.key,
       required this.color,
@@ -15,13 +15,13 @@ class ColoredTitleBox extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
-        color: Colors.blueAccent,
+        color: color,
       ),
       margin: const EdgeInsets.all(4),
       padding: const EdgeInsets.all(16.0),
       child: Row(
         children: [
-          icon,
+          Icon(icon, color: Colors.white),
           const SizedBox(width: 8),
           Text(
             title,
