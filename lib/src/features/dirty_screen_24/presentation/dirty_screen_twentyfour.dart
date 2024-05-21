@@ -1,5 +1,6 @@
 // ignore_for_file: dead_code
 
+import 'package:dirty_code/src/features/dirty_screen_24/presentation/check_list_tile.dart';
 import 'package:flutter/material.dart';
 
 class DirtyScreenTwentyFour extends StatelessWidget {
@@ -13,62 +14,10 @@ class DirtyScreenTwentyFour extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          ListTile(
-            leading: const Icon(Icons.shopping_basket),
-            title: const Text(
-              'Buy groceries',
-              style: TextStyle(
-                fontSize: 18,
-                decoration: false ? TextDecoration.lineThrough : null,
-              ),
-            ),
-            trailing: Checkbox(
-              value: false,
-              onChanged: (value) {},
-            ),
-          ),
-          ListTile(
-            leading: const Icon(Icons.shopping_basket),
-            title: const Text(
-              'Walk the dog',
-              style: TextStyle(
-                fontSize: 18,
-                decoration: true ? TextDecoration.lineThrough : null,
-              ),
-            ),
-            trailing: Checkbox(
-              value: true,
-              onChanged: (value) {},
-            ),
-          ),
-          ListTile(
-            leading: const Icon(Icons.shopping_basket),
-            title: const Text(
-              'Complete homework',
-              style: TextStyle(
-                fontSize: 18,
-                decoration: false ? TextDecoration.lineThrough : null,
-              ),
-            ),
-            trailing: Checkbox(
-              value: false,
-              onChanged: (value) {},
-            ),
-          ),
-          ListTile(
-            leading: const Icon(Icons.shopping_basket),
-            title: const Text(
-              'Call mom',
-              style: TextStyle(
-                fontSize: 18,
-                decoration: true ? TextDecoration.lineThrough : null,
-              ),
-            ),
-            trailing: Checkbox(
-              value: true,
-              onChanged: (value) {},
-            ),
-          ),
+          CheckListTile(task: "Buy groceries", isChecked: false),
+          CheckListTile(task: "Walk the dog", isChecked: true),
+          CheckListTile(task: "Complete homework", isChecked: false),
+          CheckListTile(task: "Call mom", isChecked: true)
         ],
       ),
     );
